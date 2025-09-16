@@ -8,4 +8,8 @@ use Filament\Resources\Pages\CreateRecord;
 class CreateOfficeSpace extends CreateRecord
 {
     protected static string $resource = OfficeSpaceResource::class;
+    protected function getRedirectUrl(): string
+    {
+        return $this->getResource()::getUrl('index');
+    }
 }

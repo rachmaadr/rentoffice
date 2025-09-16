@@ -1,16 +1,16 @@
 <?php
 
-namespace App\Filament\Resources\OfficeSpaces\Pages;
+namespace App\Filament\Resources\ApiKeys\Pages;
 
-use App\Filament\Resources\OfficeSpaces\OfficeSpaceResource;
+use App\Filament\Resources\ApiKeys\ApiKeyResource;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\ForceDeleteAction;
 use Filament\Actions\RestoreAction;
 use Filament\Resources\Pages\EditRecord;
 
-class EditOfficeSpace extends EditRecord
+class EditApiKey extends EditRecord
 {
-    protected static string $resource = OfficeSpaceResource::class;
+    protected static string $resource = ApiKeyResource::class;
 
     protected function getHeaderActions(): array
     {

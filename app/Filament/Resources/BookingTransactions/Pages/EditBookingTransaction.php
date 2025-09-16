@@ -20,4 +20,8 @@ class EditBookingTransaction extends EditRecord
             RestoreAction::make(),
         ];
     }
+    protected function getRedirectUrl(): string|null
+    {
+        return $this->getResource()::getUrl('index');
+    }
 }
